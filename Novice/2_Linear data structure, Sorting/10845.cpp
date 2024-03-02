@@ -1,14 +1,18 @@
 //큐로 바꾸기
 #include<iostream>
-#include<stack>
+#include<queue>
 
 using namespace std;
 
 int main() {
 
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
     int N;
     string command;
-    stack<int> st;
+    queue<int> q;
 
     cin >> N;
 
@@ -18,27 +22,33 @@ int main() {
         if (command == "push") {
             int num;
             cin >> num;
-            st.push(num);
+            q.push(num);
         } else if (command == "pop") {
-            if (st.empty()) {
+            if (q.empty()) {
                 cout << -1 << '\n';
             } else {
-                cout << st.top() << '\n';
-                st.pop();
+                cout << q.front() << '\n';
+                q.pop();
             }
         } else if (command == "size") {
-            cout << st.size() << '\n';
+            cout << q.size() << '\n';
         } else if (command == "empty") {
-            if (st.empty()) {
+            if (q.empty()) {
                 cout << 1 << '\n';
             } else {
                 cout << 0 << '\n';
             }
-        } else if (command == "top") {
-            if (st.empty()) {
+        } else if (command == "front") {
+            if (q.empty()) {
                 cout << -1 << '\n';
             } else {
-                cout << st.top() << '\n';
+                cout << q.front() << '\n';
+            }
+        } else if (command == "back") {
+            if (q.empty()) {
+                cout << -1 << '\n';
+            } else {
+                cout << q.back() << '\n';
             }
         }
     }
