@@ -23,10 +23,12 @@ int main() {
     //연산
     stack.push(0);
     for (int i = 1; i <= N + 1; i++) {
-        while (!stack.empty() && h[stack.top()] > h[i]) {   //다음 높이가 이전보다 커야함
-            int check = stack.top();
+        //현재 높이가 이전 높이보다 낮을 때
+        while (!stack.empty() && h[stack.top()] > h[i]) {
+            int height = h[stack.top()];
             stack.pop();
-            ans = max(ans, h[check] * (i - stack.top() - 1));
+            int width = i - stack.top() - 1;
+            ans = max(ans, height * width);
         }
         stack.push(i);
     }
