@@ -1,4 +1,3 @@
-//큐로 바꾸기
 #include<iostream>
 #include<queue>
 
