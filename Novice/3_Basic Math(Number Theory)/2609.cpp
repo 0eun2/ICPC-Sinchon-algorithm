@@ -2,18 +2,24 @@
 
 using namespace std;
 
+/* 유클리드 호제법
 int gcd(int a, int b) { //최대공약수
-    int r = a % b;
-    while (r != 0) {
+    int r;
+    while (b) {
+        r = a % b;
         a = b;
         b = r;
-        r = a % b;
     }
-    return b;
+    return a;
+}
+ */
+
+int gcd(int a, int b) { //최대공약수
+    return b ? gcd(b, a % b) : a;
 }
 
 int lcm(int a, int b) { //최소공배수
-    return (a * b) / gcd(a, b);
+    return a / gcd(a, b) * b;
 }
 
 int main() {
