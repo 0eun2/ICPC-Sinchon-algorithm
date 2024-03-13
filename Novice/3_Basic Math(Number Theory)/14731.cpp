@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cmath>
 
 using namespace std;
 typedef long long ll;
@@ -14,14 +13,12 @@ ll fpow(ll x) {
 }
 
 int main() {
-
-    ll N, C, K;
-    ll ans = 0;
+    ll N, C, K, ans = 0;
     cin >> N;
 
     while (N--) {
         cin >> C >> K;
-        ans += C * K % M * fpow(K - 1) % M;
+        ans = (ans + ((C * K) % M) * fpow(K - 1)) % M;
     }
 
     cout << ans;
