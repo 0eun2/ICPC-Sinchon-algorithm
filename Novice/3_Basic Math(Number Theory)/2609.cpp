@@ -23,7 +23,6 @@ int lcm(int a, int b) { //최소공배수
 }
 
 int main() {
-
     int a, b;
     cin >> a >> b;
 

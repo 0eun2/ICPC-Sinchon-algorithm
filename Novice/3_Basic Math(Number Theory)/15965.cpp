@@ -18,7 +18,6 @@ void Eratosthenes(ll n) {
 }
 
 int main() {
-
     Eratosthenes(9000000);
     ll k;
     cin >> k;
