@@ -30,6 +30,6 @@
 | 5 |[Dynamic Programming](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/5_Dynamic%20Programming)|Dynamic Programming|
 | 6 |[Binary Search, Divide and Conquer](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/6_Binary%20Search%2C%20Divide%20and%20Conquer)|Greedy|
 | 7 |[Two Pointer, Prefix Sum](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/7_Two%20Pointer%2C%20Prefix%20Sum)|Segment Tree|
-| 8 |[Tree & Graph](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/8_Tree%20%26%20Graph)|Topological Sorting, SCC, DAG DP|
+| 8 |[Tree & Graph](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/8_Tree%2C%20Graph)|Topological Sorting, SCC, DAG DP|
 | 9 |[DFS, BFS](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/9_DFS%2C%20BFS)|Geometry|
 | 10 |[Dijkstra](https://github.com/0eun2/ICPC-Sinchon-algorithm/tree/main/Novice/10_Dijkstra)|RK, KMP|
